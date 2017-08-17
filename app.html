@@ -1,0 +1,15 @@
+<html>
+<script type="text/javascript">
+    var u = navigator.userAgent;
+    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    if(isAndroid){
+        //alert('是否是Android：'+isAndroid);
+        theUrl = 'https://fir.im/rtkxcvx?utm_source=fir&utm_medium=qr';
+    }else if(isiOS){
+        theUrl = 'https://fir.im/sejhm?utm_source=fir&utm_medium=qr';
+        //alert('是否是iOS：'+isiOS);
+    }
+    window.location.href = theUrl;
+</script>
+</html>
